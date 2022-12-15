@@ -134,7 +134,7 @@ binary_sensor:
     pin:
       number: GPIO18
       mode: INPUT_PULLDOWN
-      inverted: True
+      inverted: false
     name: ${display_name} Button1
     on_press:
       - switch.toggle: relay1
@@ -143,7 +143,7 @@ binary_sensor:
     pin:
       number: GPIO17
       mode: INPUT_PULLDOWN
-      inverted: True
+      inverted: false
     name: ${display_name} Button2
     on_press:
       - switch.toggle: relay2
